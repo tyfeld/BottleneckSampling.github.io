@@ -155,3 +155,8 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+.b-section {
+  background-color: #f9f9f9; /* Change to the desired background color */
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 10px; /* Add border radius for rounded corners */
+}
