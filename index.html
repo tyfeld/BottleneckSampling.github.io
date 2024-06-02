@@ -199,5 +199,55 @@
 </section>
 
 
+
+<section class="section b-section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Diffusion models have demonstrated great success in text-to-video (T2V) generation. However, existing methods may face challenges when handling complex (long) video generation scenarios that involve multiple objects or dynamic changes in object numbers. To address these limitations, we propose <b><span class="dnerf">VideoTetris</span></b>, a novel framework that enables compositional T2V generation. Specifically, we propose spatio-temporal compositional diffusion to precisely follow complex textual semantics by manipulating and composing the attention maps of denoising networks spatially and temporally. Moreover, we propose a new dynamic-aware data processing pipeline and a consistency regularization method to enhance the consistency of auto-regressive video generation. Extensive experiments demonstrate that our <b><span class="dnerf">VideoTetris</span></b> achieves impressive qualitative and quantitative results in compositional T2V generation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="Method">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Method</h2>
+    <section class="hero method">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img id="method" autoplay muted loop playsinline height="100%" src="./static/images/method.png" style="width:100%;height:80%;">
+          <p>
+            The overall pipeline of <b><span class="dnerf">VideoTetris</span></b>. We introduce <b><span class="dnerf">Spatio-Temporal Compositional module</span></b> for compositional video generation and <b><span class="dnerf">Reference Frame Attention</span></b>. For longer video generation, a ControlNet-like branch can be adopted for auto-regressive generation.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<section class="section b-section" id="Method-Detailed">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Spatio-Temporal Compositional Diffusion</h2>
+    <section class="hero method">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img id="method" autoplay muted loop playsinline height="100%" src="./static/images/method_detailed.png" style="width:100%;height:80%;">
+            <p>
+              Illustration of <b><span class="dnerf">Spatio-Temporal Compositional Diffusion</span></b>. For a given story "A little dolphin starts exploring an old city under the sea,  she first found a green turtle at the bottom, then her huge father comes along to accompany her at the right side.", we first decompose it temporally to Text Prompt #1, #2 and #3, then we decompose each of them spatially to compute each sub-region's cross attention maps. Finally, we compose them spatio-temporally to form a natural story.
+            </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
 </body>
 </html>
