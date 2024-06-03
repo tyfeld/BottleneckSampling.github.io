@@ -48,14 +48,20 @@
       font-family: arial, sans-serif;  
       border-collapse: collapse;  
       width: 100%;  
+      border: none;
     }  
-      
+/*       
     td, th {  
       border: 2px solid #F1F4F5;  
       text-align: left;  
       padding: 8px;  
-    }  
+    }   */
     
+    th, td {
+    padding: 8px;
+    text-align: center;
+    border: none; /* 隐藏边框 */
+    }
     tr:nth-child(3n - 1) {  
       background-color: #F1F4F5;  
     }  
@@ -267,11 +273,11 @@
         <th><b>VideoTetris</b></th>
       </tr>
       <tr>
-        <td><video src="./static/videos/short/robot_girl_ad.mp4" controls style="width:17%;"></video></td>
-        <td><video src="./static/videos/short/robot_girl_gen2.mp4" controls style="width:17%;"></video></td>
-        <td><video src="./static/videos/short/robot_and_girl_pika.mp4" controls style="width:17%;"></video></td>
-        <td><video src="./static/videos/short/robot_girl_vc2.mp4" controls style="width:17%;"></video></td>
-        <td><video src="./static/videos/short/robot_girl.mp4" controls style="width:17%;"></video></td>
+        <td><video src="./static/videos/short/robot_girl_ad.mp4" controls ></video></td>
+        <td><video src="./static/videos/short/robot_girl_gen2.mp4" controls></video></td>
+        <td><video src="./static/videos/short/robot_and_girl_pika.mp4" controls></video></td>
+        <td><video src="./static/videos/short/robot_girl_vc2.mp4" controls></video></td>
+        <td><video src="./static/videos/short/robot_girl.mp4" controls></video></td>
       </tr>
       <!-- <tr>
         <td width=25% style="text-align:center;">"Explore the coral gardens of the sea..."</td>
