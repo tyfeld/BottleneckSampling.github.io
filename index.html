@@ -62,13 +62,17 @@
     text-align: center;
     border: none; /* 隐藏边框 */
     }
-    tr:nth-child(3n - 1) {  
+    video {
+    width: 50%; /* 每个视频占20%的宽度 */
+    height: auto;
+    }
+    /* tr:nth-child(3n - 1) {  
       background-color: #F1F4F5;  
     }  
 
     tr:nth-child(3n) {  
       border: 2px solid #FFFFFF;
-    }  
+    }   */
   </style>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -273,8 +277,8 @@
         <th><b>VideoTetris</b></th>
       </tr>
       <tr>
-        <td><video src="./static/videos/short/robot_girl_ad.mp4" controls ></video></td>
-        <td><video src="./static/videos/short/robot_girl_gen2.mp4" controls></video></td>
+        <td><video src="./static/videos/short/robot_girl_ad.mp4" controls autoplay muted loop playsinline ></video></td>
+        <td><video src="./static/videos/short/robot_girl_gen2.mp4" controls autoplay muted loop playsinline></video></td>
         <td><video src="./static/videos/short/robot_and_girl_pika.mp4" controls></video></td>
         <td><video src="./static/videos/short/robot_girl_vc2.mp4" controls></video></td>
         <td><video src="./static/videos/short/robot_girl.mp4" controls></video></td>
@@ -290,7 +294,7 @@
             <i>A heroic robot on the left and a magical girl on the right are saving the day." </i>
         </td>
        </tr>
-      <tr><td></td><td></td><td></td><td></td></tr>
+      <!-- <tr><td></td><td></td><td></td><td></td></tr> -->
     </table>
 
     <!-- insert text:A brave knight and a wise wizard are journeying through a forest. here -->
