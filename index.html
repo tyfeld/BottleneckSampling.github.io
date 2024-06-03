@@ -192,7 +192,7 @@
       <img id="teaser" autoplay muted loop playsinline height="100%" src="./static/images/first.png" style="width:100%;height:100%;">
       <p class="subtitle has-text-centered">
         <b><span class="dnerf">VideoTetris</span></b> is a novel framework that enables compositional text-to-video generation. 
-        We identify compositional video generation in two scenarios: <b>short video generation for a single multi-object</b> prompt and <b>long video generation for progressing multi-object prompts</b>. We compare VideoTetris with both short and long video generation models, and it showcases superior performance in compositional generation with the capability of precisely following position information, consistent scene transitions, and various features of different sub-objects.
+        We identify compositional video generation in two scenarios: <b>short video generation for a single multi-object prompt</b> and <b>long video generation for progressing multi-object prompts</b>. We compare VideoTetris with both short and long video generation models, and it showcases superior performance in compositional generation with the capability of precisely following position information, consistent scene transitions, and various features of different sub-objects.
       </p>
     </div>
   </div>
@@ -248,6 +248,56 @@
     </section>
   </div>
 </section>
+
+<section class="section " id="Results1">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Comparison of Short Video Generation for A Single Multi-Object Prompt</h2>
+    <section class="hero method">
+    <div class="container is-max-desktop">
+    <div class="hero-body">
+
+    <!-- <h3 class="title">1200 FRAMES @ 2 MINUTES</h3> -->
+    <table class="center">
+      <tr><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr>
+        <th>AnimateDiff</th>
+        <th>Runway Gen-2</th>
+        <th>Pika Labs</th>
+        <th>VideoCrafter</th>
+        <th><b>VideoTetris</b></th>
+      </tr>
+      <tr>
+        <td><video src="./static/videos/short/robot_girl_ad.mp4" controls style="width:17%;"></video></td>
+        <td><video src="./static/videos/short/robot_girl_gen2.mp4" controls style="width:17%;"></video></td>
+        <td><video src="./static/videos/short/robot_and_girl_pika.mp4" controls style="width:17%;"></video></td>
+        <td><video src="./static/videos/short/robot_girl_vc2.mp4" controls style="width:17%;"></video></td>
+        <td><video src="./static/videos/short/robot_girl.mp4" controls style="width:17%;"></video></td>
+      </tr>
+      <!-- <tr>
+        <td width=25% style="text-align:center;">"Explore the coral gardens of the sea..."</td>
+        <td width=25% style="text-align:center;">"Camera moving in a wide bright ice cave."</td>
+        <td width=25% style="text-align:center;">"Experience the dance of jellyfish..."</td>
+        <td width=25% style="text-align:center;">"Wide shot of battlefield, stormtroopers running..."</td>
+      </tr> -->
+      <tr>
+        <td colspan="5">
+            <i>A heroic robot on the left and a magical girl on the right are saving the day." </i>
+        </td>
+       </tr>
+      <tr><td></td><td></td><td></td><td></td></tr>
+    </table>
+
+    <!-- insert text:A brave knight and a wise wizard are journeying through a forest. here -->
+    <!-- <p>A brave knight and a wise wizard are journeying through a forest.
+    </p> -->
+
+  </div></div></section>
+  </div>
+</section>
+
+
+
+
 
 </body>
 </html>
