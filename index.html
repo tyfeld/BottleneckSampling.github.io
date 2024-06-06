@@ -232,7 +232,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Diffusion models have demonstrated great success in text-to-video (T2V) generation. However, existing methods may face challenges when handling complex (long) video generation scenarios that involve multiple objects or dynamic changes in object numbers. To address these limitations, we propose <b><span class="dnerf">VideoTetris</span></b>, a novel framework that enables compositional T2V generation. Specifically, we propose spatio-temporal compositional diffusion to precisely follow complex textual semantics by manipulating and composing the attention maps of denoising networks spatially and temporally. Moreover, we propose a new dynamic-aware data processing pipeline and a consistency regularization method to enhance the consistency of auto-regressive video generation. Extensive experiments demonstrate that our <b><span class="dnerf">VideoTetris</span></b> achieves impressive qualitative and quantitative results in compositional T2V generation.
+            Diffusion models have demonstrated great success in text-to-video (T2V) generation. However, existing methods may face challenges when handling complex (long) video generation scenarios that involve multiple objects or dynamic changes in object numbers. To address these limitations, we propose <b><span class="dnerf">VideoTetris</span></b>, a novel framework that enables compositional T2V generation. Specifically, we propose <i>spatio-temporal compositional diffusion</i> to precisely follow complex textual semantics by manipulating and composing the attention maps of denoising networks spatially and temporally. Moreover, we propose an enhanced video data preprocessing to enhance the training data regarding motion dynamics and prompt understanding, equipped with a new \textit{reference frame attention} mechanism to improve the consistency of auto-regressive video generation. Extensive experiments demonstrate that our <b><span class="dnerf">VideoTetris</span></b> achieves impressive qualitative and quantitative results in compositional T2V generation. 
           </p>
         </div>
       </div>
@@ -405,16 +405,7 @@
         <th>StreamingT2V</th>
         <th><b>VideoTetris</b></th>
       </tr>
-      <tr>
-        <td><video src="./static/videos/long/blonde_free.mp4" controls autoplay muted loop playsinline></video></td>
-        <td><video src="./static/videos/long/original.mp4" controls autoplay muted loop playsinline></video></td>
-        <td><video src="./static/videos/long/blonde.mp4" controls autoplay muted loop playsinline></video></td>
-      </tr>
-      <tr>
-        <td colspan="3" style="text-align: center;">
-          <b><i><span style="color:rgb(41, 137, 137);">A handsome young man</span> is drinking coffee on a wooden table. <br> ------> (transitions to) <br> <span style="color:darkslategray;">A handsome young man</span> and <span style="color: darkgoldenrod;">a young lady woman with blonde hair </span> are drinking coffee on a wooden table.</i></b>
-        </td>
-      </tr>
+      
       <tr>
         <td><video src="./static/videos/long/knight-free.mp4" controls autoplay muted loop playsinline></video></td>
         <td><video src="./static/videos/long/fig5-streaming.mp4" controls autoplay muted loop playsinline></video></td>
@@ -424,6 +415,17 @@
         <td colspan="3" style="text-align: center;">
           <b><i> <span style="color: grey;">A brave knight</span> is journeying through a forest. <br> ------> (transitions to) <br> <span style="color: grey;">A brave knight</span> and <span style="color: darkgreen;">a wise wizard </span>are journeying through a forest.</i></b>
           <b><i>
+        </td>
+      </tr>
+      <tr>
+        <td><video src="./static/videos/long/free_2_squi.mp4" controls autoplay muted loop playsinline></video></td>
+        <td><video src="./static/videos/long/original_2_squi.mp4" controls autoplay muted loop playsinline></video></td>
+        <td><video src="./static/videos/long/squi2.mp4" controls autoplay muted loop playsinline></video></td>
+      </tr>
+      <tr>
+        <td colspan="3" style="text-align: center;">
+          <b><i><span style="color:rgb(182, 97, 12);">A cute brown squirrel </span> in Antarctica, on a pile of hazelnuts cinematic. <br> ------> (transitions to) <br> <span style="color:rgb(182, 97, 12);">A cute brown squirrel</span> and <span style="color: rgb(169, 142, 73);">a cute white squirrel </span> in Antarctica, on a pile of hazelnuts cinematic</i></b>
+             
         </td>
       </tr>
     </table>
