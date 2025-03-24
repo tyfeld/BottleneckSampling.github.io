@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="VideoTetris: Towards Compositional Text-To-Video Generation">
+        content="Training-free Diffusion Acceleration with Bottleneck Sampling>
   <meta name="keywords" content="VideoTetris">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>VideoTetris: Towards Compositional Text-To-Video Generationt</title>
+  <title>Training-free Diffusion Acceleration with Bottleneck Sampling</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -111,34 +111,28 @@
               <a href="https://tyfeld.github.io">Ye Tian</a><sup>1*</sup>,</span>
             </span>
             <span class="author-block">
-              <a href="https://yangling0818.github.io/">Ling Yang</a><sup>1*</sup><sup>†</sup>,</span>
+              <a href="https://yangling0818.github.io/">Xin Xia</a><sup>2*</sup>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=LH71RGkAAAAJ&hl=en">Haotian Yang</a><sup>2</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=LH71RGkAAAAJ&hl=en">Yuxi Ren</a><sup>2</sup>,</span>
             </span>
             <span class="author-block">
-              <a href="">Yuan Gao</a><sup>2</sup>,</span>
+              <a href="">Shanchuan Lin</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="">Yufan Deng</a><sup>1</sup>,</span>
+              <a href="">Xing Wang</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="">Jingmin Chen</a><sup>1</sup>,</span><br>
+              <a href="">Xuefeng Xiao</a><sup>2</sup>,</span><br>
             <span class="author-block">
-              <a href="https://xinntao.github.io/">Xintao Wang</a><sup>2</sup>,
+              <a href="https://xinntao.github.io/">Yunhai Tong</a><sup>1</sup><sup>†</sup>,
             </span>
             <span class="author-block">
-              <a href="">Zhaochen Yu</a><sup>1</sup>,</span>
+              <a href="">Ling Yang</a><sup>1</sup><sup>†</sup>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=P6MraaYAAAAJ&hl=en">Pengfei Wan</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://openreview.net/profile?id=~Di_ZHANG3">Di Zhang</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://cuibinpku.github.io/cuibin_cn.html">Bin Cui</a><sup>1</sup>
+              <a href="https://cuibinpku.github.io/cuibin_cn.html">Bin Cui</a><sup>1</sup><sup>†</sup>
             </span>
           </div>
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Peking University,</span>
-            <span class="author-block"><sup>2</sup>Kuaishou Technology</span>
+            <span class="author-block"><sup>2</sup>ByteDance</span>
             <!-- <span class="author-block"><sup>3</sup>SHI Labs @ Georgia Tech, Oregon & UIUC</span> -->
           </div>
           <div class="is-size-5 publication-authors">
@@ -180,7 +174,7 @@
               </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/YangLing0818/VideoTetris"
+                <a href="https://github.com/tyfeld/Bottleneck-Sampling"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -210,10 +204,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img id="teaser" autoplay muted loop playsinline height="100%" src="./static/images/first.jpg" style="width:100%;height:100%;">
+      <img id="teaser" autoplay muted loop playsinline height="100%" src="./static/images/main.pdf" style="width:100%;height:100%;">
       <p class="subtitle has-text-centered">
-        <b><span class="dnerf">VideoTetris</span></b> is a novel framework that enables compositional text-to-video generation. 
-        We identify compositional video generation in two scenarios: <b>Video Generation with Compositional Prompts</b> and <b>Long Video Generation with Progressive Compositional Prompts</b>. We compare VideoTetris with both short and long video generation models, and it showcases superior performance in compositional generation with the capability of precisely following position information, consistent scene transitions, and various features of different sub-objects.
+        <b><span class="dnerf">Bottleneck-Sampling</span></b> a training-free framework that leverages low-resolution priors to reduce computational overhead while preserving output fidelity. It maintains comparable performance with a 2.5 - 3 &times; acceleration ratio in a training-free manner.
       </p>
     </div>
   </div>
@@ -229,7 +222,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Diffusion models have demonstrated great success in text-to-video (T2V) generation. However, existing methods may face challenges when handling complex (long) video generation scenarios that involve multiple objects or dynamic changes in object numbers. To address these limitations, we propose <b><span class="dnerf">VideoTetris</span></b>, a novel framework that enables compositional T2V generation. Specifically, we propose <i>spatio-temporal compositional diffusion</i> to precisely follow complex textual semantics by manipulating and composing the attention maps of denoising networks spatially and temporally. Moreover, we propose an enhanced video data preprocessing to enhance the training data regarding motion dynamics and prompt understanding, equipped with a new \textit{reference frame attention} mechanism to improve the consistency of auto-regressive video generation. Extensive experiments demonstrate that our <b><span class="dnerf">VideoTetris</span></b> achieves impressive qualitative and quantitative results in compositional T2V generation. 
+            Diffusion models have demonstrated remarkable capabilities in visual content generation but remain challenging to deploy due to their high computational cost during inference. This computational burden primarily arises from the quadratic complexity of self-attention with respect to image or video resolution. While existing acceleration methods often compromise output quality or necessitate costly retraining, we observe that most diffusion models are pre-trained at lower resolutions, presenting an opportunity to exploit these low-resolution priors for more efficient inference without degrading performance. In this work, we introduce <b><span class="dnerf">Bottleneck Sampling</span></b>, a training-free framework that leverages low-resolution priors to reduce computational overhead while preserving output fidelity. Bottleneck Sampling follows a high-low-high denoising workflow: it performs high-resolution denoising in the initial and final stages while operating at lower resolutions in intermediate steps. To mitigate aliasing and blurring artifacts, we further refine the resolution transition points and adaptively shift the denoising timesteps at each stage. We evaluate Bottleneck Sampling on both image and video generation tasks, where extensive experiments demonstrate that it accelerates inference by up to 3 &times; for image generation and 2.5 &times; for video generation, all while maintaining output quality comparable to the standard full-resolution sampling process across multiple evaluation metrics.
           </p>
         </div>
       </div>
