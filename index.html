@@ -111,22 +111,22 @@
               <a href="https://tyfeld.github.io">Ye Tian</a><sup>1*</sup>,</span>
             </span>
             <span class="author-block">
-              <a href="https://yangling0818.github.io/">Xin Xia</a><sup>2*</sup>,</span>
+              <a href="https://scholar.google.com/citations?hl=en&user=JP14UGgAAAAJ">Xin Xia</a><sup>2*</sup>,</span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=LH71RGkAAAAJ&hl=en">Yuxi Ren</a><sup>2</sup>,</span>
+              <a href="https://scholar.google.com/citations?hl=en&user=C_6JH-IAAAAJ">Yuxi Ren</a><sup>2</sup>,</span>
             </span>
             <span class="author-block">
-              <a href="">Shanchuan Lin</a><sup>2</sup>,</span>
+              <a href="https://scholar.google.com/citations?user=EDWUw7gAAAAJ&hl=en">Shanchuan Lin</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="">Xing Wang</a><sup>2</sup>,</span>
+              <a href="https://scholar.google.com/citations?hl=en&user=cswtxw4AAAAJ">Xing Wang</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="">Xuefeng Xiao</a><sup>2</sup>,</span>
+              <a href="https://scholar.google.com/citations?hl=en&user=CVkM9TQAAAAJ">Xuefeng Xiao</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://xinntao.github.io/">Yunhai Tong</a><sup>1</sup><sup>†</sup>,
+              <a href="https://scholar.google.com/citations?hl=en&user=T4gqdPkAAAAJ">Yunhai Tong</a><sup>1</sup><sup>†</sup>,
             <br>
             </span>
             <span class="author-block">
-              <a href="">Ling Yang</a><sup>1</sup><sup>†</sup>,</span>
+              <a href="https://yangling0818.github.io/">Ling Yang</a><sup>1</sup><sup>†</sup>,</span>
             <span class="author-block">
               <a href="https://cuibinpku.github.io/cuibin_cn.html">Bin Cui</a><sup>1</sup><sup>†</sup>
             </span>
@@ -281,9 +281,10 @@
     </section>
   </div>
 </section>
+
 <section class="section " id="Results1">
   <div class="container is-max-desktop content">
-    <h2 class="title">Results on Image Generation</h2>
+    <h2 class="title">Results on Video Generation</h2>
     <section class="hero method">
     <div class="container is-max-desktop">
     <div class="hero-body">
@@ -310,7 +311,7 @@
         <!-- <td><video src="./static/videos/short/gen2.mp4" controls autoplay muted loop playsinline></video></td> -->
       </tr>
       <tr>
-        <td class="col-10" style="vertical-align: middle;width: 10%;"> HunyuanVideo 50% steps </td>
+        <td class="col-10" style="vertical-align: middle;width: 10%;"> HunyuanVideo 40% steps </td>
         <td><video src="./static/videos/0.5huanyuan/cat.mp4" controls autoplay muted loop playsinline></video></td>
         <td><video src="./static/videos/0.5huanyuan/old.mp4" controls autoplay muted loop playsinline></video></td>
       </tr>
@@ -328,7 +329,7 @@
             <b><i><span style="color: greenyellow;">A cat is walking on the grass.</span></i></b>
         </td>
         <td style="text-align:center;">
-          <b><i><span style="color: grey;">At dusk, an elderly couple holding hands stroll along the beach, with the waves gently lapping at the shore and the afterglow of the setting sun shining on them. The entire scene creates a tranquil atmosphere.
+          <b><i><span style="color: grey; font-size: smaller;">At dusk, an elderly couple holding hands stroll along the beach, with the waves gently lapping at the shore and the afterglow of the setting sun shining on them. The entire scene creates a tranquil atmosphere.
           </span></i></b>
         </td>
         <!-- <td style="text-align:center;">
@@ -349,6 +350,74 @@
     </p> -->
 
   </div></div></section>
+
+  <section class="hero method">
+    <div class="container is-max-desktop">
+    <div class="hero-body">
+
+    <!-- <h3 class="title">1200 FRAMES @ 2 MINUTES</h3> -->
+    <table class="center">
+      <colgroup>
+        <col class="col-10">
+        <col width="auto">
+        <col width="auto">
+      </colgroup>
+      <!-- <tr><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr>
+        <th>AnimateDiff</th>
+        <th>Runway Gen-2</th>
+        <th>Pika Labs</th>
+        <th>VideoCrafter</th>
+        <th><b>VideoTetris</b></th>
+      </tr> -->
+      <tr>
+        <td class="col-10" style="vertical-align: middle"> HunyuanVideo </td>
+        <td><video src="./static/videos/hunyuan/apple.mp4" controls autoplay muted loop playsinline></video></td>
+        <td><video src="./static/videos/hunyuan/ant.mp4" controls autoplay muted loop playsinline></video></td>
+        <!-- <td><video src="./static/videos/short/gen2.mp4" controls autoplay muted loop playsinline></video></td> -->
+      </tr>
+      <tr>
+        <td class="col-10" style="vertical-align: middle;width: 10%;"> HunyuanVideo 40% steps </td>
+        <td><video src="./static/videos/0.5huanyuan/apple.mp4" controls autoplay muted loop playsinline></video></td>
+        <td><video src="./static/videos/0.5huanyuan/ant.mp4" controls autoplay muted loop playsinline></video></td>
+      </tr>
+
+      <tr>
+        <td class="col-10" style="vertical-align: middle"><b>Bottleneck Sampling</b></td>
+        <td><video src="./static/videos/bs/apple.mp4" controls autoplay muted loop playsinline></video></td>
+        <td><video src="./static/videos/bs/ant.mp4" controls autoplay muted loop playsinline></video></td>
+        <!-- <td><video src="./static/videos/short/cat_dog_os.mp4" controls autoplay muted loop playsinline></video></td>
+        <td><video src="./static/videos/short/sponge_baby_os.mp4" controls autoplay muted loop playsinline></video></td> -->
+      </tr>
+      <tr>
+        <td></td>
+        <td style="text-align:center;">
+            <b><i>A wizard is waving a magic wand, chanting spells, controlling an apple to fly into the air. The color of the apple changes from <span style="color: greenyellow;">green</span> to <span style="color: red;">red</span>.
+            </span></i></b>
+        </td>
+        <td style="text-align:center;">
+          <b><i><span style="color: pink;">There is a mirror on the pink dressing table, and <span style="color: darkcyan;">below </span>the mirror</span>, an ant is slowly crawling on the desktop.
+          </span></i></b>
+        </td>
+        <!-- <td style="text-align:center;">
+          <b><i><span style="color:saddlebrown;">A cute brown dog on the left </span>and <span style="color:rgb(197, 181, 34);">a sleepy cat on the right</span> are napping in the sun.
+          </i></b>
+        </td>
+        <td style="text-align:center;">
+          <b><i><span style="color: darkorange;">A talking sponge on the left</span> and <span style="color: brown;"> a superhero baby on the right </span>are having an adventure.
+          </i></b> -->
+        </td>
+
+       </tr>
+      <!-- <tr><td></td><td></td><td></td><td></td></tr> -->
+    </table>
+
+    <!-- insert text:A brave knight and a wise wizard are journeying through a forest. here -->
+    <!-- <p>A brave knight and a wise wizard are journeying through a forest.
+    </p> -->
+
+  </div></div></section>
+
   </div>
 </section>
 
